@@ -75,7 +75,13 @@ scroller.on Events.ScrollStart, ->
 	for sqare in sqares
 		sqare.animate
 			properties: 
-				backgroundColor: "#ffffff"
+				cornerRadius: 0
+			curve: "ease-in-out"
+			time: 0.3
+	for cr in contours
+		cr.animate
+			properties: 
+				cornerRadius: 100
 			curve: "ease-in-out"
 			time: 0.3
 
@@ -83,7 +89,13 @@ scroller.on Events.ScrollEnd, ->
 	for sqare in sqares
 		sqare.animate
 			properties: 
-				backgroundColor: "#00cccc"
+				cornerRadius: 150
+			curve: "ease-in-out"
+			time: 0.3
+	for cr in contours
+		cr.animate
+			properties: 
+				cornerRadius: 0
 			curve: "ease-in-out"
 			time: 0.3
 			
