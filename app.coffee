@@ -89,11 +89,11 @@ scroller.on Events.ScrollEnd, ->
 			
 txt = new Layer
 	height: 100
-	width: 300
+	width: 400
 	x: 50
 	y: 50
 	backgroundColor: ""
-	html: "Framer ♥ GitHub"
+	html: "Just scroll this thing a bit"
 	
 
 #Utils.labelLayer(txt, "Framer ♥ GitHub")
