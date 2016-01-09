@@ -71,33 +71,33 @@ scroller.on Events.Move, ->
 	refreshsquares()
 	#print scroller.scrollX
 	
-scroller.on Events.ScrollStart, ->
-	for sqare in sqares
-		sqare.animate
-			properties: 
-				cornerRadius: 0
-			curve: "ease-in-out"
-			time: 0.3
-	for cr in contours
-		cr.animate
-			properties: 
-				cornerRadius: 100
-			curve: "ease-in-out"
-			time: 0.3
-
-scroller.on Events.ScrollEnd, ->
-	for sqare in sqares
-		sqare.animate
-			properties: 
-				cornerRadius: 150
-			curve: "ease-in-out"
-			time: 0.3
-	for cr in contours
-		cr.animate
-			properties: 
-				cornerRadius: 0
-			curve: "ease-in-out"
-			time: 0.3
+# scroller.on Events.ScrollStart, ->
+# 	for sqare in sqares
+# 		sqare.animate
+# 			properties: 
+# 				cornerRadius: 0
+# 			curve: "ease-in-out"
+# 			time: 0.3
+# 	for cr in contours
+# 		cr.animate
+# 			properties: 
+# 				cornerRadius: 100
+# 			curve: "ease-in-out"
+# 			time: 0.3
+# 
+# scroller.on Events.ScrollEnd, ->
+# 	for sqare in sqares
+# 		sqare.animate
+# 			properties: 
+# 				cornerRadius: 150
+# 			curve: "ease-in-out"
+# 			time: 0.3
+# 	for cr in contours
+# 		cr.animate
+# 			properties: 
+# 				cornerRadius: 0
+# 			curve: "ease-in-out"
+# 			time: 0.3
 			
 txt = new Layer
 	height: 100
