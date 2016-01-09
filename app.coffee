@@ -86,3 +86,14 @@ scroller.on Events.ScrollEnd, ->
 				backgroundColor: "#00cccc"
 			curve: "ease-in-out"
 			time: 0.3
+			
+txt = new Layer
+	height: 100
+	width: 300
+	x: 50
+	y: 50
+	backgroundColor: ""
+	html: "Framer ♥ GitHub"
+	
+
+#Utils.labelLayer(txt, "Framer ♥ GitHub")
